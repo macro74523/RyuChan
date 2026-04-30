@@ -48,8 +48,8 @@ site:
       title: Cloud Music
       subtitle: 沉浸式享受音乐时光
   meting:
-    server: tencent
-    id: '9705271372'
+    server: kugou
+    id: gcid_3znwo99fz2vz017
     br: '128'
     trans: true
   menu:
