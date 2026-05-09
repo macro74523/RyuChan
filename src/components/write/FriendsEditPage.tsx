@@ -3,6 +3,7 @@
 import { useEffect, useState, useRef } from 'react'
 import { toast, Toaster } from 'sonner'
 import { useAuthStore } from './hooks/use-auth'
+import { getAuthToken } from '@/lib/auth'
 import { readFileAsText } from '@/lib/file-utils'
 import { loadFriendsFromGitHub, saveFriendsToGitHub } from './services/friends-service'
 import type { FriendItem } from '@/interface/friend'
@@ -230,6 +231,8 @@ export default function FriendsEditPage({ initialFriends = [] }: Props) {
       const pem = await readFileAsText(file)
       await setPrivateKey(pem)
       toast.success('密钥导入成功')
+      // Pre-fetch and cache the installation token without reloading data
+      getAuthToken().catch(() => {})
     } catch {
       toast.error('密钥导入失败')
     }
