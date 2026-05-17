@@ -4,7 +4,7 @@ site:
   title_type: image
   description: 🌸 轻盈、优雅、纯净 —— 用文字与图片记录生活与创意
   language: zh
-  favicon: https://hub.131714.xyz/favicon.png
+  favicon: https://demo.131714.xyz/favicon.png
   theme:
     light: garden
     dark: dracula
@@ -183,10 +183,6 @@ user:
         ariaLabel: Telegram
         title: Telegram
         svg: ri:telegram-line
-      - href: test
-        title: Zhihu
-        ariaLabel: Zhihu
-        svg: ri:zhihu-line
 comments:
   enable: true
   type: twikoo
