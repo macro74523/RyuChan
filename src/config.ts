@@ -22,7 +22,7 @@ export const SITE_TITLE_TYPE = config.site.title_type || config.site.titleType |
 export const SITE_TITLE_IMAGE = config.user?.title_image || config.user?.titleImage || '';
 export const SITE_DESCRIPTION = config.site.description;
 export const SITE_LANGUAGE = config.site.language;
-export const SITE_FAVICON = config.site.favicon;
+export const SITE_FAVICON = config.site.favicon || '/favicon.ico';
 export const SITE_THEME = config.site.theme;
 export const DATE_FORMAT = config.site.date_format;
 

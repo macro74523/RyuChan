@@ -858,7 +858,7 @@ export function ConfigPage() {
                                             className="input input-sm input-bordered w-full text-center text-xs rounded-full bg-base-100 shadow-sm focus:border-primary focus:ring-2 focus:ring-primary/20"
                                             value={parsedConfig?.site?.favicon || ''}
                                             onChange={e => updateConfigValue('site.favicon', e.target.value)}
-                                            placeholder="图标 URL"
+                                            placeholder="图标 URL 或上传图片（将重命名为 favicon.ico）"
                                         />
                                     </div>
                                     <div className="space-y-3">
