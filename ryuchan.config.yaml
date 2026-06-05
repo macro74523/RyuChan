@@ -108,9 +108,6 @@ music:
       name: 周杰伦
       server: netease
       type: custom
-    - id: '17957136689'
-      name: 林俊杰
-      server: netease
     - id: '17966019560'
       name: 告五人
       server: netease
