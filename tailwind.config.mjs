@@ -38,7 +38,7 @@ export default {
   ],
   plugins: [daisyUI, typography, addDynamicIconSelectors(), tailwindcssAnimate],
   daisyui: {
-    themes: false,
+    themes: true,
     darkTheme: SITE_THEME.dark, // name of one of the included themes for dark mode
     logs: false, // Shows info about daisyUI version and used config in the console when building your CSS
   },
