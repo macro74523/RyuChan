@@ -1,10 +1,7 @@
 (function (global) {
+  // 缓存前缀，后面会拼接 shareId
   const cacheKeyPrefix = 'umami-share-cache-';
-  const cacheTTL = 3600_000;
-
-  function normalizeUrl(baseUrl) {
-    return baseUrl.replace(/\/+$/, '');
-  }
+  const cacheTTL = 3600_000; // 1h
 
   async function fetchShareData(baseUrl, shareId) {
     const key = cacheKeyPrefix + shareId;
@@ -21,7 +18,7 @@
       }
     }
     console.log('[Umami] Fetching new token for', shareId);
-    const res = await fetch(`${normalizeUrl(baseUrl)}/api/share/${shareId}`);
+    const res = await fetch(`${baseUrl}/api/share/${shareId}`);
     if (!res.ok) {
       throw new Error('获取 Umami 分享信息失败');
     }
@@ -76,7 +73,7 @@
         ...queryParams
       });
       
-      const statsUrl = `${normalizeUrl(baseUrl)}/api/websites/${websiteId}/stats?${params.toString()}`;
+      const statsUrl = `${baseUrl}/api/websites/${websiteId}/stats?${params.toString()}`;
       console.log('[Umami] Fetching stats:', statsUrl);
       
       const res = await fetch(statsUrl, {

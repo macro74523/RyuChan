@@ -119,7 +119,7 @@ github:
   encryptKey: KoBariDevYa
 umami:
   enable: true
-  baseUrl: https://umami777.macro.wang/
+  baseUrl: https://umami777.macro.wang
   shareId: 4OHBvC0kOKWj0DT3
   websiteId: 9c2dab11-97da-492f-aee4-f86c948b83e6
   timezone: Asia/Shanghai
