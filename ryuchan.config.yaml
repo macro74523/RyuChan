@@ -14,13 +14,13 @@ site:
     pageSize: 8
   banner:
     enableRandom: false
-    randomUrl:
+    randomUrl: null
     randomCount: 5
     height: 70vh
     images:
       - https://img.cdn1.vip/i/6a5ecf9761657_1784598423.webp
-  icp: 萌ICP备20261117号
-  icp_link: https://icp.gov.moe/?keyword=20261117
+  icp: 萌ICP备20261021号
+  icp_link: https://icp.gov.moe/?keyword=20261021
   pages:
     home:
       title: RyuChan's Blog
